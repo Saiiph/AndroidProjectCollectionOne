@@ -3,8 +3,6 @@ package com.example.androidprojectcollection;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Toast;
 import java.util.Random;
@@ -46,7 +44,7 @@ public class ColorMatching extends AppCompatActivity {
         btn1=findViewById(R.id.button1);
         btn2=findViewById(R.id.button2);
         btn3=findViewById(R.id.button3);
-        btn4=findViewById(R.id.button4);
+        btn4=findViewById(R.id.btnConnect);
         btn5=findViewById(R.id.button5);
         btn6=findViewById(R.id.button6);
         btn7=findViewById(R.id.button7);

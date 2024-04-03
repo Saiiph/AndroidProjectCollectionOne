@@ -16,6 +16,8 @@ import android.widget.Toast;
     Button btn3;
     Button btn4;
 
+    Button btn5;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +67,16 @@ import android.widget.Toast;
                 Intent intent= new Intent();
                 startActivity(new Intent(MainActivity.this,ColorMatching.class));
                 Toast.makeText(MainActivity.this, "Michael Harry P. Leones, ColorMatching", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btn5 = findViewById(R.id.btnConnect);
+        btn5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent();
+                startActivity(new Intent(MainActivity.this,Connect3.class));
+                Toast.makeText(MainActivity.this, "Michael Harry P. Leones, Connect 3 ", Toast.LENGTH_SHORT).show();
             }
         });
     }
