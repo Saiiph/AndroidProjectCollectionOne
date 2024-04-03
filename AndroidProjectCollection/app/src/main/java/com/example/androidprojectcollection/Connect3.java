@@ -1,4 +1,6 @@
 package com.example.androidprojectcollection;
 
-public class Connect3 extends AppCompatActivit {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class Connect3 extends AppCompatActivity {
 }
