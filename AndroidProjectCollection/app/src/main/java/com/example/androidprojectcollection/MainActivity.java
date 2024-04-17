@@ -76,8 +76,19 @@
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent();
-                startActivity(new Intent(MainActivity.this, ConnectGame.class));
+                startActivity(new Intent(MainActivity.this, ConnectActivity.class));
                 Toast.makeText(MainActivity.this, "Michael Harry P. Leones, Connect 3 ", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        btn6=findViewById(R.id.btnIntents);
+
+        btn6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent();
+                startActivity(new Intent(MainActivity.this,PassingIntents.class));
+                Toast.makeText(MainActivity.this, "Michael Harry P. Leones, Passing Intents", Toast.LENGTH_SHORT).show();
             }
         });
     }

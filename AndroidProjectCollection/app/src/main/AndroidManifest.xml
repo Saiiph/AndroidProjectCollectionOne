@@ -33,7 +33,10 @@
             android:exported="false" />
 
         <activity
-            android:name=".ConnectGame"
+            android:name=".ConnectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PassingIntents"
             android:exported="false" />
 
         <activity

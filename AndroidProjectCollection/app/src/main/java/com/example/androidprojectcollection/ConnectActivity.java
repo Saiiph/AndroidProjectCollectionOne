@@ -13,7 +13,9 @@ import java.util.ArrayList;
 import java.util.zip.Inflater;
 
 
-public class ConnectActivity extends AppCompatActivity {
+public class ConnectActivity extends AppCompatActivity implements View.OnClickListener {
+
+
     public enum playerTurn{
         player_1,player_2
     }
@@ -25,11 +27,16 @@ public class ConnectActivity extends AppCompatActivity {
     private ConnectGame connectGame;
     private playerTurn currentTurn;
 
+    @Override
+    public void onClick(View view) {
+
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.connect3);
         Inflater ActivityConnectBinding;
         binding = Connect3Binding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
 
         binding.btnRestartGame.setOnClickListener(v -> restartGame());
         startconnectGame();
@@ -130,6 +137,8 @@ public class ConnectActivity extends AppCompatActivity {
     public ArrayList<Button> getButtonCellsArrayList() {
         return buttonCellsArrayList;
     }
+
+
 
 
 
