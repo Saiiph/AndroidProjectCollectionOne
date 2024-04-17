@@ -75,7 +75,7 @@ import android.widget.Toast;
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent();
-                startActivity(new Intent(MainActivity.this,Connect3.class));
+                startActivity(new Intent(MainActivity.this, ConnectActivity.class));
                 Toast.makeText(MainActivity.this, "Michael Harry P. Leones, Connect 3 ", Toast.LENGTH_SHORT).show();
             }
         });
