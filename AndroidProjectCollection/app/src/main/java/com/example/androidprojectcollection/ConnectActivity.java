@@ -1,7 +1,5 @@
 package com.example.androidprojectcollection;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,9 +7,10 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.androidprojectcollection.databinding.ActivityConnectBinding;
+import com.example.androidprojectcollection.databinding.Connect3Binding;
 
 import java.util.ArrayList;
+import java.util.zip.Inflater;
 
 
 public class ConnectActivity extends AppCompatActivity {
@@ -21,14 +20,15 @@ public class ConnectActivity extends AppCompatActivity {
     private static final String ACTIVITY_TAG="ConnectThree";
     private static final int max_rows=5;
     private static final int max_cols=5;
-    private ActivityConnectBinding binding;
+    private Connect3Binding binding;
     private ArrayList<Button> buttonCellsArrayList;
     private ConnectGame connectGame;
     private playerTurn currentTurn;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityConnectBinding.inflate(getLayoutInflater());
+        Inflater ActivityConnectBinding;
+        binding = Connect3Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         binding.btnRestartGame.setOnClickListener(v -> restartGame());

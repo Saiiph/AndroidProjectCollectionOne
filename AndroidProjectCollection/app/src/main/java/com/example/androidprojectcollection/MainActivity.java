@@ -1,13 +1,13 @@
  package com.example.androidprojectcollection;
 
-import androidx.appcompat.app.AppCompatActivity;
+ import android.annotation.SuppressLint;
+ import android.content.Intent;
+ import android.os.Bundle;
+ import android.view.View;
+ import android.widget.Button;
+ import android.widget.Toast;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
+ import androidx.appcompat.app.AppCompatActivity;
 
  public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +17,7 @@ import android.widget.Toast;
     Button btn4;
 
     Button btn5;
+    Button btn6;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -75,7 +76,7 @@ import android.widget.Toast;
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent();
-                startActivity(new Intent(MainActivity.this, ConnectActivity.class));
+                startActivity(new Intent(MainActivity.this, ConnectGame.class));
                 Toast.makeText(MainActivity.this, "Michael Harry P. Leones, Connect 3 ", Toast.LENGTH_SHORT).show();
             }
         });

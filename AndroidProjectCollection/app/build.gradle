@@ -5,7 +5,9 @@ plugins {
 android {
     namespace 'com.example.androidprojectcollection'
     compileSdk 33
-
+    viewBinding {
+        enabled = true
+    }
     defaultConfig {
         applicationId "com.example.androidprojectcollection"
         minSdk 24
