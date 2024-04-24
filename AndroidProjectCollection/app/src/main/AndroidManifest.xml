@@ -38,6 +38,9 @@
         <activity
             android:name=".PassingIntents"
             android:exported="false" />
+        <activity
+            android:name=".PassingIntents2"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"
